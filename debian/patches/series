@@ -2,4 +2,3 @@ fix-bash-init.patch
 fix-sh-init.patch
 fix-zsh-init.patch
 fix-ksh-init.patch
-fix-bash_profile.patch
