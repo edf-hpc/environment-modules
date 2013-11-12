@@ -1,0 +1,15 @@
+--- a/init/sh.in
++++ b/init/sh.in
+@@ -7,10 +7,10 @@
+ @VERSIONING@fi
+ @VERSIONING@export MODULE_VERSION_STACK
+ 
+-@VERSIONING@module() { eval `@BASEPREFIX@/Modules/$MODULE_VERSION/bin/modulecmd sh $*`; }
++@VERSIONING@module() { eval `/usr/bin/modulecmd sh $*`; }
+ @NOTVERSIONING@module() { eval `@bindir@/modulecmd sh $*`; }
+ 
+-MODULESHOME=@prefix@
++source /etc/default/environment-modules
+ export MODULESHOME
+ 
+ if [ "${LOADEDMODULES:-}" = "" ]; then

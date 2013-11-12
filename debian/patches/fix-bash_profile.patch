@@ -1,0 +1,13 @@
+Modif pour utiliser un fichier de config dans /etc/default/environment-modules
+--- a/init/bash.in
++++ b/init/bash.in
+@@ -11,8 +11,7 @@
+ @NOTVERSIONING@module() { eval `@bindir@/modulecmd bash $*`; }
+ export -f module
+ 
+-MODULESHOME=@prefix@
+-export MODULESHOME
++source /etc/default/environment-module
+ 
+ if [ "${LOADEDMODULES:-}" = "" ]; then
+   LOADEDMODULES=

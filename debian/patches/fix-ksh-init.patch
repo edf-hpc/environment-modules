@@ -1,0 +1,15 @@
+--- a/init/ksh.in
++++ b/init/ksh.in
+@@ -7,10 +7,10 @@
+ @VERSIONING@fi
+ @VERSIONING@export MODULE_VERSION_STACK
+ 
+-@VERSIONING@module() { eval `@BASEPREFIX@/Modules/$MODULE_VERSION/bin/modulecmd ksh $*`; }
++@VERSIONING@module() { eval `/usr/bin/modulecmd ksh $*`; }
+ @NOTVERSIONING@module() { eval `@bindir@/modulecmd ksh $*`; }
+ 
+-MODULESHOME=@prefix@
++source /etc/default/environment-modules
+ export MODULESHOME
+ 
+ if [ "${LOADEDMODULES:-}" = "" ]; then
