@@ -1,3 +1,9 @@
+environment-modules (3.2.10-2) squeeze; urgency=low
+
+  * Remove unnecessary patch (fix-bash_profile.patch).
+
+ -- Mehdi Dogguy <mehdi@debian.org>  Tue, 19 Nov 2013 13:33:02 +0100
+
 environment-modules (3.2.10-1) calibre7; urgency=low
 
   * Initial release
