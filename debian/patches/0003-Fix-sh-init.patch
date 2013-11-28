@@ -1,3 +1,13 @@
+From: Benoit Boccard <benoit-externe.boccard@edf.fr>
+Date: Thu, 28 Nov 2013 10:18:24 +0100
+Subject: [PATCH] Fix sh init
+
+---
+ init/sh.in |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/init/sh.in b/init/sh.in
+index d7ebd8f..def3afa 100644
 --- a/init/sh.in
 +++ b/init/sh.in
 @@ -7,10 +7,10 @@
@@ -13,3 +23,4 @@
  export MODULESHOME
  
  if [ "${LOADEDMODULES:-}" = "" ]; then
+-- 

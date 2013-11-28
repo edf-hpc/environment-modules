@@ -1,3 +1,13 @@
+From: Benoit Boccard <benoit-externe.boccard@edf.fr>
+Date: Thu, 28 Nov 2013 10:18:18 +0100
+Subject: [PATCH] Fix Ksh init
+
+---
+ init/ksh.in |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/init/ksh.in b/init/ksh.in
+index e545b2a..3c68625 100644
 --- a/init/ksh.in
 +++ b/init/ksh.in
 @@ -7,10 +7,10 @@
@@ -13,3 +23,4 @@
  export MODULESHOME
  
  if [ "${LOADEDMODULES:-}" = "" ]; then
+-- 

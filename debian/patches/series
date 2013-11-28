@@ -1,4 +1,4 @@
-fix-bash-init.patch
-fix-sh-init.patch
-fix-zsh-init.patch
-fix-ksh-init.patch
+0001-Fix-bash-init.patch
+0002-Fix-Ksh-init.patch
+0003-Fix-sh-init.patch
+0004-Fix-zsh-init.patch
