@@ -3,14 +3,14 @@ Date: Thu, 28 Nov 2013 10:18:37 +0100
 Subject: [PATCH] Fix zsh init
 
 ---
- init/zsh.in |    4 ++--
- 1 files changed, 2 insertions(+), 2 deletions(-)
+ init/zsh.in |    5 +++--
+ 1 files changed, 3 insertions(+), 2 deletions(-)
 
 diff --git a/init/zsh.in b/init/zsh.in
-index b679cc4..27bc636 100644
+index b679cc4..486063e 100644
 --- a/init/zsh.in
 +++ b/init/zsh.in
-@@ -7,10 +7,10 @@
+@@ -7,10 +7,11 @@
  @VERSIONING@fi
  @VERSIONING@export MODULE_VERSION_STACK
  
@@ -20,6 +20,7 @@ index b679cc4..27bc636 100644
  
 -MODULESHOME=@prefix@
 +source /etc/default/environment-modules
++export MODULEPATH
  export MODULESHOME
  
  if [ "${LOADEDMODULES:-}" = "" ]; then

@@ -3,14 +3,14 @@ Date: Thu, 28 Nov 2013 10:17:10 +0100
 Subject: [PATCH] Fix bash init
 
 ---
- init/bash.in |    4 ++--
- 1 files changed, 2 insertions(+), 2 deletions(-)
+ init/bash.in |    5 +++--
+ 1 files changed, 3 insertions(+), 2 deletions(-)
 
 diff --git a/init/bash.in b/init/bash.in
-index 9e8585f..8fd9800 100644
+index 9e8585f..ae7571a 100644
 --- a/init/bash.in
 +++ b/init/bash.in
-@@ -7,11 +7,11 @@
+@@ -7,11 +7,12 @@
  @VERSIONING@fi
  @VERSIONING@export MODULE_VERSION_STACK
  
@@ -21,6 +21,7 @@ index 9e8585f..8fd9800 100644
  
 -MODULESHOME=@prefix@
 +source /etc/default/environment-modules
++export MODULEPATH
  export MODULESHOME
  
  if [ "${LOADEDMODULES:-}" = "" ]; then

@@ -1,3 +1,9 @@
+environment-modules (3.2.10-3) squeeze; urgency=low
+
+  * Fix init scripts to export MODULEPATH.
+
+ -- Mehdi Dogguy <mehdi@debian.org>  Thu, 28 Nov 2013 10:35:35 +0100
+
 environment-modules (3.2.10-2) squeeze; urgency=low
 
   * Remove unnecessary patch (fix-bash_profile.patch).
