@@ -1,1 +1,2 @@
-debian/etc/default/environment-modules /etc/default/
+debian/etc/default/environment-modules		etc/default/
+debian/003_modules.sh				etc/profile.d/

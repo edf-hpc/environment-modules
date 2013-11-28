@@ -1,8 +1,10 @@
 environment-modules (3.2.10-3) squeeze; urgency=low
 
   * Fix init scripts to export MODULEPATH.
+  * Provide 003_modules.sh under /etc/profile.d so that configuration
+    is automatically loaded.
 
- -- Mehdi Dogguy <mehdi@debian.org>  Thu, 28 Nov 2013 10:35:35 +0100
+ -- Mehdi Dogguy <mehdi@debian.org>  Thu, 28 Nov 2013 10:39:02 +0100
 
 environment-modules (3.2.10-2) squeeze; urgency=low
 
