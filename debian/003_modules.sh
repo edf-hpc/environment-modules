@@ -1,6 +1,6 @@
 . /etc/default/environment-modules
 
-MODULES_INIT="$MODULESHOME/init/$SHELL"
+MODULES_INIT="$MODULESHOME/init/$(basename $SHELL)"
 
 if [ -e $MODULES_INIT ]; then
         . $MODULES_INIT

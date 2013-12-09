@@ -1,3 +1,9 @@
+environment-modules (3.2.10-4) squeeze; urgency=low
+
+  * Bugfix profile script 003_modules.sh.
+
+ -- Benoit Boccard <benoit-externe.boccard@edf.fr>  Mon, 09 Dec 2013 10:26:11 +0100
+
 environment-modules (3.2.10-3) squeeze; urgency=low
 
   * Fix init scripts to export MODULEPATH.
