@@ -2,3 +2,4 @@
 0002-Fix-Ksh-init.patch
 0003-Fix-sh-init.patch
 0004-Fix-zsh-init.patch
+0005-Do-not-use-export-f-with-Bash.patch

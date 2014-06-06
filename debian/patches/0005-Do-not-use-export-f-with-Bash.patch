@@ -1,0 +1,22 @@
+From: Mehdi Dogguy <mehdi@dogguy.org>
+Date: Fri, 6 Jun 2014 08:29:36 +0200
+Subject: [PATCH] Do not use export -f with Bash
+
+---
+ init/bash.in |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/init/bash.in b/init/bash.in
+index ae7571a..2b1165a 100644
+--- a/init/bash.in
++++ b/init/bash.in
+@@ -9,7 +9,7 @@
+ 
+ @VERSIONING@module() { eval `/usr/bin/modulecmd bash $*`; }
+ @NOTVERSIONING@module() { eval `@bindir@/modulecmd bash $*`; }
+-export -f module
++export module
+ 
+ source /etc/default/environment-modules
+ export MODULEPATH
+-- 

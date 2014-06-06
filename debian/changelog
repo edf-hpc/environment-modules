@@ -1,3 +1,10 @@
+environment-modules (3.2.10-5) squeeze; urgency=low
+
+  * Use plain 'export' instead of 'export -f' with Bash.
+    - Add 0005-Do-not-use-export-f-with-Bash.patch
+
+ -- Mehdi Dogguy <mehdi@debian.org>  Fri, 06 Jun 2014 08:30:10 +0200
+
 environment-modules (3.2.10-4) squeeze; urgency=low
 
   * Bugfix profile script 003_modules.sh.
